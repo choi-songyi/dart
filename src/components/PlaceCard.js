@@ -30,58 +30,58 @@ function PlaceCard(){
              : null}
           <div className="card-box-container">
             <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src="./img/Space/card@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_2@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_2@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_3@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_3@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_4@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_4@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_5@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_5@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_6@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_6@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_7@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_7@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_8@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_8@3x.png" }alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_9@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_9@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_10@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_10@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_11@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_11@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_12@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_12@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_13@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_13@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card_14@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_14@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card-done_2@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_2@3x.png" }alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card-done_3@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_3@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card-done@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done@3x.png"} alt=""/>
             </div>
             <div className="card-box">
-                <img src="./img/Space/card@3x.png" alt=""/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt=""/>
             </div>
           </div>
           <div className="pre-nxt-page-btn">

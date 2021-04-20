@@ -33,35 +33,35 @@ function PlacePage(){
             </div>
             <div className="place-lists">
                 <div className="place-thumbnail-box">
-                    <img src="./img/Space/oval-copy-4@3x.png" alt="Berlin" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/img/Space/oval-copy-4@3x.png"} alt="Berlin" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Berlin</div>
                 </div>
                 <div className="place-thumbnail-box">
-                <img src="./img/Space/oval.png" alt="London" className="place-list"/>
+                <img src={process.env.PUBLIC_URL+"/img/Space/oval.png"} alt="London" className="place-list"/>
                     <div className="place-name"  onClick={()=>{history.push('/placeDetail')}}>London</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./img/Space/oval-copy@3x.png" alt="Helsinki" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/img/Space/oval-copy@3x.png"} alt="Helsinki" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Helsinki</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./img/Space/oval-copy-2@3x.png" alt="Porto" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/img/Space/oval-copy-2@3x.png"} alt="Porto" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Porto</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./img/Space/oval-copy-3@3x.png" alt="Nice" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/img/Space/oval-copy-3@3x.png"} alt="Nice" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Nice</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./img/Space/oval-copy-8@3x.png" alt="Madrid" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/img/Space/oval-copy-8@3x.png"} alt="Madrid" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Madrid</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./logo192.png" alt="Place" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/logo192.png"} alt="Place" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Place</div>
                 </div>
                 <div className="place-thumbnail-box">
-                    <img src="./logo192.png" alt="Place" className="place-list"/>
+                    <img src={process.env.PUBLIC_URL+"/logo192.png"} alt="Place" className="place-list"/>
                     <div className="place-name" onClick={()=>{history.push('/placeDetail')}}>Place</div>
                 </div>
             </div>
