@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 function ColoredNav(){
     return (
         <nav className="colored-nav">
-          <Link to='/'>
+          <Link to='/dart'>
             <img src="./img/뉴로고.png" alt="logo" className="logo"/>
           </Link>
           <Link to='/myPlan'>

@@ -45,11 +45,11 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path='/'>
+        <Route exact path='/dart'>
           <div className="main-board">
             <img src="./img/bg.jpeg" alt="bg" className="bg"/>
             <nav className="nav">
-          <Link to='/'>
+          <Link to='/dart'>
             <img src="./img/뉴로고_검.png" alt="logo" className="logo"/>
           </Link>
           <Link to='/myPlan'>
