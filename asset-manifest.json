@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/choi-songyi/dart/static/css/main.84d16513.chunk.css",
+    "main.js": "/choi-songyi/dart/static/js/main.54ce1039.chunk.js",
+    "main.js.map": "/choi-songyi/dart/static/js/main.54ce1039.chunk.js.map",
+    "runtime-main.js": "/choi-songyi/dart/static/js/runtime-main.b30b0c80.js",
+    "runtime-main.js.map": "/choi-songyi/dart/static/js/runtime-main.b30b0c80.js.map",
+    "static/js/2.fbd2916f.chunk.js": "/choi-songyi/dart/static/js/2.fbd2916f.chunk.js",
+    "static/js/2.fbd2916f.chunk.js.map": "/choi-songyi/dart/static/js/2.fbd2916f.chunk.js.map",
+    "static/js/3.b5e47be6.chunk.js": "/choi-songyi/dart/static/js/3.b5e47be6.chunk.js",
+    "static/js/3.b5e47be6.chunk.js.map": "/choi-songyi/dart/static/js/3.b5e47be6.chunk.js.map",
+    "index.html": "/choi-songyi/dart/index.html",
+    "static/css/main.84d16513.chunk.css.map": "/choi-songyi/dart/static/css/main.84d16513.chunk.css.map",
+    "static/js/2.fbd2916f.chunk.js.LICENSE.txt": "/choi-songyi/dart/static/js/2.fbd2916f.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b30b0c80.js",
+    "static/js/2.fbd2916f.chunk.js",
+    "static/css/main.84d16513.chunk.css",
+    "static/js/main.54ce1039.chunk.js"
+  ]
+}
