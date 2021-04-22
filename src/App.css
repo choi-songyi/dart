@@ -386,10 +386,23 @@ h1 {
   outline: none;
 }
 .folderNarray {
+  position: relative;
   margin: 2rem auto;
+}
+.folderNarray img {
+  position: absolute;
+  top: -7px;
+  right: 22rem;
+  width: 3rem;
+  height: 3rem;
+  z-index: 1;
+}
+.folderNarray img:hover {
+  cursor: pointer;
 }
 .opt {
   position: absolute;
+  top: 0;
   right: 13.5rem;
   border: none;
   background-color: var(--very-light-pink);
@@ -397,6 +410,7 @@ h1 {
   height: 2rem;
   padding: 0.5rem 1.3rem;
   border-radius: 8px;
+  z-index: 1;
 }
 .opt:focus {
   outline: none;
@@ -405,22 +419,13 @@ h1 {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   width: 70%;
-  margin: 1rem auto;
+  margin: 5rem auto;
 }
 .card-box {
   position: relative;
   text-align: center;
 }
-.card-box button {
-  position: absolute;
-  top: 0.7em;
-  right: 0.3em;
-  width: 1.75rem;
-  height: 1.75rem;
-  border: none;
-  background-color: var(--white);
-  border-radius: 50%;
-}
+
 .card-box img {
   width: 12.75rem;
   height: 16.625rem;
@@ -442,6 +447,11 @@ h1 {
   margin: 0 3rem;
   line-height: 1.4rem;
   text-align: center;
+}
+.modal-save-container {
+  position: fixed;
+  top: 40%;
+  z-index: 10;
 }
 .modal-save {
   position: relative;
@@ -484,5 +494,100 @@ h1 {
 .modal-save button:focus {
   outline: none;
 }
+/* my folder */
+.modal-folder-container {
+  position: fixed;
+  top: 0;
+  height: 130%;
+  width: 100vw;
+  background-color: var(--dimmer-1);
+  z-index: 20;
+}
+.modal-folder {
+  position: relative;
+  margin: 10rem auto;
+  padding: 4rem;
+  width: 80%;
+  height: 500px;
+  background-color: white;
+}
+.modal-folder .close {
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.modal-folder .close:hover {
+  cursor: pointer;
+}
+.modal-folder span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.87px;
+}
+.modal-folder .bold {
+  background-color: var(--light-cyan);
+}
+.modal-folder p {
+  margin: 0.25rem 0.125rem 0.438rem 0.313rem;
+}
+.lists-wrap {
+  overflow-y: scroll;
+  height: 80%;
+}
+.lists-wrap::-webkit-scrollbar-thumb {
+  background-color: var(--robin-s-egg-blue);
+  border-radius: 10px;
+}
+.lists-wrap::-webkit-scrollbar-track {
+  background-color: var(--very-light-pink);
+}
+.lists-wrap::-webkit-scrollbar {
+  width: 5px;
+}
+.saved-place-lists {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(145px, 1fr));
+  justify-content: center;
+}
+.saved-place-list input {
+  margin: 0.2rem;
+}
+.saved-place-list img {
+  width: 6.75rem;
+  height: 6.75rem;
+}
+.saved-place-list span {
+  font-size: 0.75rem;
+  margin-left: 0.2rem;
+}
+.cancel {
+  position: absolute;
+  right: 150px;
+  height: 25px;
+  margin-top: 5px;
+  line-height: 25px;
+  border: none;
+  background-color: var(--white);
+}
+.cancel:focus {
+  outline: none;
+}
+.del-saved:focus {
+  outline: none;
+}
+.del-saved {
+  position: absolute;
+  right: 70px;
+  height: 25px;
+  margin-top: 5px;
+  line-height: 25px;
+  border: none;
+  background-color: var(--coral);
+  color: var(--white);
+  border-radius: 3px;
+}
+
 /* font */
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);

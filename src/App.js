@@ -29,6 +29,7 @@ function App() {
     setNav(false);
   }
 
+  
   const handleScroll = () => {
     if(document.documentElement.scrollTop>930){
       setScrollTop(true);
@@ -120,9 +121,12 @@ function App() {
           <SearchBar/>
         </Route>
         <Route path='/myPlan'>
-          <h1>아직 내용 없음 컴포넌트로 따로 분리</h1>
+          <StaticNav/>
+          <div className="clear"></div>
         </Route>
         <Route path='/profile'>
+          <StaticNav/>
+          <div className="clear"></div>
         </Route>
       </Switch>
     </div>
