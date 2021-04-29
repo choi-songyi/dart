@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import '../App.css';
+import MapAPI from './Map';
+
 
 function PlaceCard(){
 
      const[clickSave, setClickSave] = useState(false);
      const[clickFolder, setClickFolder] = useState(false);
-    
-    const[filterList,setFilter]  = useState(['공원','셜록2','해리포터']);
+     const[clickImg, setClickImg] = useState(false);
+     const[filterList,setFilter]  = useState(['공원','셜록2','해리포터']);
 
     useEffect(()=>{
         let timer = setTimeout(()=>{
@@ -23,6 +25,15 @@ function PlaceCard(){
             document.body.style.overflow = "unset"
         }
     },[clickFolder]);
+
+    useEffect(()=>{
+        if(clickImg===true){
+            document.body.style.overflow="hidden";
+        };
+        return()=>{
+            document.body.style.overflow = "unset"
+        }
+    },[clickImg]);
   
 
     return (
@@ -49,60 +60,81 @@ function PlaceCard(){
             {clickFolder === true
              ? <FolderModal setClickFolder={setClickFolder}/>
              : null}
+            {clickImg === true
+             ? <ImgModal setClickImg={setClickImg}/>
+             : null}
           <div className="card-box-container">
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_2@3x.png"} alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_3@3x.png"} alt=""/>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_4@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_2@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_5@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_3@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_6@3x.png"} alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_7@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_4@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_8@3x.png" }alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_5@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_9@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_6@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_10@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_7@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_11@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_8@3x.png" }alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_12@3x.png"} alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_13@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_9@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card_14@3x.png"} alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_2@3x.png" }alt=""/>
-            </div>
-            <div className="card-box" onClick={()=>{setClickSave(true)}}>
-                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_3@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_10@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card-done@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_11@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
             <div className="card-box">
-                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt=""/>
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_12@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_13@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card_14@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_2@3x.png" }alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done_3@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card-done@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
+            </div>
+            <div className="card-box">
+                <button className="plus" onClick={()=>{setClickSave(true)}}>+</button>
+                <img src={process.env.PUBLIC_URL+"/img/Space/card@3x.png"} alt="" onClick={()=>{setClickImg(true)}}/>
             </div>
           </div>
           <div className="pre-nxt-page-btn">
@@ -132,7 +164,7 @@ function FolderModal(props){
         <div className="modal-folder-container">
             <div className="modal-folder">
                 <img src={process.env.PUBLIC_URL+'/img/folder/path@3x.png'} alt="close-icon" className="close" onClick={()=>{props.setClickFolder(false)}}/>
-                <span>자유로운 방랑객7님이 <span className="bold">저장한 장소 리스트</span>에요.</span>
+                <span>방랑객55님이 <span className="highlight">저장한 장소 리스트</span>에요.</span>
                 <p>📍 내 폴더 &gt; 영국</p>
                 <div className="lists-wrap">
                     <div className="saved-place-lists">
@@ -216,6 +248,85 @@ function SaveModal(props){
         
     )    
 }
+
+function ImgModal(props) {
+    return(
+        <div className="modal-img-container">
+            <div className="modal-img">
+                <img src={process.env.PUBLIC_URL+'/img/folder/path@3x.png'} alt="close-icon" className="close" onClick={()=>{props.setClickImg(false)}}/>
+                <div className="info-box-container">
+                    <div className="info-box">
+                        <img src={process.env.PUBLIC_URL+'/img/Space/abc@3x.png'} alt=""/>
+                        <h4>St.Paul Cathedral, London</h4>
+                        <button>삭제하기</button>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga repellendus dolore impedit dolorem necessitatibus natus quidem ipsam voluptatum provident et.</p>
+                    </div>
+                    <MapAPI/>
+                </div>
+                <div className="place-box-container">
+                    <button>&lt;</button>
+                    <button>&gt;</button>
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/1@3x.png'} alt=""/>
+                        <p>TateModern</p> 
+                    </div>    
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/2@3x.png'} alt=""/>
+                        <p>Borough Market</p> 
+                    </div>
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/3@3x.png'} alt=""/>
+                        <p>London Eye</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/4@3x.png'} alt=""/>
+                        <p>Tower Bridge</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/5@3x.png'} alt=""/>
+                        <p>British Museum</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/6@3x.png'} alt=""/>
+                        <p>Bigben</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/7@3x.png'} alt=""/>
+                        <p>Street Market</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/8@3x.png'} alt=""/>
+                        <p>Battersea station</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/9@3x.png'} alt=""/>
+                        <p>Greenwich</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/10@3x.png'} alt=""/>
+                        <p>Sherlock Homes</p> 
+                    </div>  
+                    <div className="place-box">
+                        <button>+</button>
+                        <img src={process.env.PUBLIC_URL+'/img/Space/11@3x.png'} alt=""/>
+                        <p>Trafalgar Square</p> 
+                    </div>   
+                </div>
+            </div>
+        </div>
+    )
+}
+
 
 export default PlaceCard;
 
